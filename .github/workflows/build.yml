@@ -54,7 +54,7 @@ jobs:
       - name: Deploy on CapRover
         uses: caprover/deploy-from-github@d76580d79952f6841c453bb3ed37ef452b19752c
         with:
-          server: '${{ secrets.CAPROVER_HOST }}'
-          app: '${{ secrets.CAPROVER_APP }}'
+          server: 'https://oleksii-luchnikov.com'
+          app: oleksii-luchnikov
           token: '${{ secrets.APP_TOKEN }}'
           image: 'ghcr.io/oleksiiluchnikov/oleksii-luchnikov.com:master'
