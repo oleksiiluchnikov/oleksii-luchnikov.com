@@ -11,7 +11,7 @@ env:
   DOCKER_REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   CAPROVER_APP: oleksii-luchnikov
-  CAPROVER_SERVER: https://oleksii-luchnikov.com
+  CAPROVER_SERVER: https://caprover.oleksii-luchnikov.com
 
 
 jobs:
