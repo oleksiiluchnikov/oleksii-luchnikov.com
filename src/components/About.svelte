@@ -1,15 +1,19 @@
 <script>
   import Avatar from "./Avatar.svelte";
   import SocialLinks from "./SocialLinks.svelte";
+
+  const name = "Oleksii Luchnikov";
+  const short = "Oil Painter, Digital Artist and Software Developer";
+  const from = "Kharkiv, Ukraine";
 </script>
 
 <div class="about-container">
   <Avatar />
   <div class="about-text-container">
-    <h1 class="about-title">Hi, I'm Oleksii Luchnikov</h1>
-    <h2 class="about-short">Oil Painter, Digital Artist and Software Developer 
+    <h1 class="about-title">Hi, I'm {name}</h1>
+    <h2 class="about-short">{short}
     <br />
-    from Kharkiv, Ukraine.
+    from {from}
     </h2>
     <p class="about-long" />
     <SocialLinks />

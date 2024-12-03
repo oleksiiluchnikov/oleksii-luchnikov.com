@@ -18,7 +18,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        background: url("https://cdna.artstation.com/p/assets/images/images/005/091/416/large/oleksij-luchnikov-outskirts-luchnikov.jpg?1488394227");
+        background: black;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
