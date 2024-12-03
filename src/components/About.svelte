@@ -3,26 +3,26 @@
   import SocialLinks from "./SocialLinks.svelte";
 
   const name = "Oleksii Luchnikov";
-  const short = "Oil Painter, Digital Artist and Software Developer";
+  const short = "oil painter / key frame illustrator / concept artist for Films, Commercials & more";
   const from = "Kharkiv, Ukraine";
 </script>
 
-<div class="about-container">
+<main class="about-container" role="main">
   <Avatar />
-  <div class="about-text-container">
+  <section class="about-text-container">
     <h1 class="about-title">Hi, I'm {name}</h1>
     <h2 class="about-short">{short}
-    <br />
+    <br aria-hidden="true" />
     from {from}
     </h2>
-    <p class="about-long" />
+    <p class="about-long"></p>
     <SocialLinks />
-  </div>
-</div>
+  </section>
+</main>
 
 <style>
   .about-container {
-    font-family: "Fixel";
+    font-family: "Fixel", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;

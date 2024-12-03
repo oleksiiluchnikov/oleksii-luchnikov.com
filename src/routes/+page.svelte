@@ -2,11 +2,13 @@
     import "../app.css";
     import About from "../components/About.svelte";
     import Footer from "../components/Footer.svelte";
+    import Menu from "../components/Menu.svelte";
 
-    let background = "/background.jpg";
+    const background = "/background.jpg";
 </script>
 
-<div class="main-container" style="background-image: url({background})">
+<Menu />
+<div class="main-container" style="background-image: url({background});">
     <About />
 </div>
 <Footer />
@@ -18,7 +20,6 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        background: black;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;

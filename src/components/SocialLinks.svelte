@@ -1,57 +1,88 @@
-<div class="social-links-container">
-    <a
-        class="social-link"
-        href="https://www.artstation.com/luchnikov"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-    ArtStation
-    </a>
-    <a
-        class="social-link"
-        href="https://github.com/oleksiiluchnikov"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-    GitHub
-    </a>
-    <a
-        class="social-link"
-        href="https://instagram.com/oleksii_luchnikov"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-    Instagram
-    </a>
-    <a
-        class="social-link"
-        href="https://www.linkedin.com/in/oleksii-luchnikov-aa60501a7/"
-        target="_blank"
-        rel="noopener noreferrer"
-    >LinkedIn
-    </a>
-</div>
+<script>
+import SocialLink from './SocialLink.svelte';
+
+const socialLinks = [
+    {
+        name: 'ArtStation',
+        url: 'https://www.artstation.com/luchnikov',
+        icon: 'artstation',
+        label: 'View my artwork on ArtStation'
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/oleksii_luchnikov/',
+        icon: 'instagram',
+        label: 'Follow me on Instagram'
+    },
+    {
+        name: 'Twitter',
+        url: 'https://twitter.com/o_luchnikov',
+        icon: 'twitter',
+        label: 'Follow me on Twitter'
+    },
+    {
+        name: 'GitHub',
+        url: 'https://github.com/oleksiiluchnikov',
+        icon: 'github',
+        label: 'Check my code on GitHub'
+    },
+    {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/oleksiiluchnikov',
+        icon: 'facebook',
+        label: 'Connect with me on Facebook'
+    },
+    {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/oleksii-luchnikov/',
+        icon: 'linkedin',
+        label: 'Connect with me on LinkedIn'
+    },
+];
+
+</script>
+
+<nav aria-label="Social media profiles" class="social-navigation">
+    <h2 class="visually-hidden">Connect with me on social media</h2>
+    <ul class="social-links-container" role="list">
+        {#each socialLinks as {name, url, icon, label}}
+            <SocialLink {name} {url} {icon} {label} />
+        {/each}
+    </ul>
+</nav>
 
 <style>
+    .social-navigation {
+        display: flex;
+        align-items: left;
+        margin: 1.5rem 0;
+    }
+
     .social-links-container {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
-    .social-link {
-        display: inline-block;
-        color: #fff;
-        font-size: 1rem;
-        text-decoration: none;
-        border-radius: 0.2rem;
-        background-color: #3D32BC;
-        padding: 0.4rem 1rem;
-        position: relative; /* Add position property */
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
     }
 
-    .social-link:hover {
-            box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
-            transform: translateX(-5px) translateY(-5px);
+    @media (max-width: 480px) {
+        .social-links-container {
+            gap: 0.75rem;
+        }
     }
 </style>
-

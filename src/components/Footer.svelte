@@ -1,7 +1,6 @@
 <footer>
   <p class="footer-text">
-    <!-- make Oleksii Luchnikov a link to the home page -->
-    © {new Date().getFullYear()} <a href="/">Oleksii Luchnikov</a>.
+    © {new Date().getFullYear()} <a href="/" aria-label="Homepage">Oleksii Luchnikov</a>.
   </p>
 </footer>
 
@@ -10,21 +9,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 1.2rem;
+    height: 1.2em;
     opacity: 0.5;
-    background-color: #3D32BC;
+    background-color: transparent;
+    padding: 1rem 0;
+    margin-top: auto;
+    role: contentinfo;
   }
   .footer-text {
-    font-size: 0.8rem;
+    font-size: 0.8em;
     text-align: center;
     width: 100%;
+    margin: 0;
   }
 
   .footer-text a {
-    color: #fff;
-    font-weight: bold;
+    color: var(--text-normal);
+    font-weight: normal;
     text-decoration: none;
+    transition: opacity 0.2s ease;
   }
 
+  .footer-text a:hover,
+  .footer-text a:focus {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+
+  .footer-text a:focus-visible {
+    outline: 2px solid var(--text-normal);
+    outline-offset: 2px;
+  }
 </style>

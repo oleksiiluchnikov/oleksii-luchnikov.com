@@ -1,17 +1,17 @@
 :root {
-    /* background: linear-gradient(to bottom right, #13123d, #252249); */
-    --text-normal: hsla(0, 0%, 100%, 0.8);
+    --text-normal: hsla(0, 0%, 100%, 1);
     --background-primary: #13123d;
+    --bg-primary: #3D32BC;
 }
 
 body {
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    font-family: "Fixel", Arial, Helvetica, sans-serif;
+    color: var(--text-normal);
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding: 0;
     margin: 0;
-    background: rgba(0, 0, 0, 1);
+    background: var(--background-primary);
 }
