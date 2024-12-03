@@ -10,7 +10,7 @@ env:
   CONTEXT_DIR: './'
   DOCKER_REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  CAPROVER_APP: oleksii-luchnikov
+  CAPROVER_APP: www
   CAPROVER_SERVER: https://caprover.oleksii-luchnikov.com
 
 
