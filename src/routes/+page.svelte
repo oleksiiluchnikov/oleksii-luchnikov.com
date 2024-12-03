@@ -2,12 +2,12 @@
     import "../app.css";
     import About from "../components/About.svelte";
     import Footer from "../components/Footer.svelte";
-    import Menu from "../components/Menu.svelte";
+    // TODO: Implement Menu component
+    // import Menu from "../components/Menu.svelte";
 
     const background = "/background.jpg";
 </script>
 
-<Menu />
 <div class="main-container" style="background-image: url({background});">
     <About />
 </div>
