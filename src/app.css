@@ -1,16 +1,13 @@
 :root {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
     /* background: linear-gradient(to bottom right, #13123d, #252249); */
-    overflow: hidden;
     --text-normal: hsla(0, 0%, 100%, 0.8);
     --background-primary: #13123d;
-    color: #fff;
 }
 
 body {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
     display: flex;
     flex-direction: column;
     height: 100vh;
