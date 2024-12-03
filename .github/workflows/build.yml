@@ -48,6 +48,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
             PUBLIC_HELLO=world
+            NODE_VERSION=20
 
       # Uncomment and replace with your server
       - name: Deploy on CapRover
