@@ -53,9 +53,8 @@ const socialLinks = [
 
 <style>
     .social-navigation {
-        display: flex;
-        align-items: left;
-        margin: 1.5rem 0;
+        align-items: center;
+        font-family: "Fixel Display";
     }
 
     .social-links-container {

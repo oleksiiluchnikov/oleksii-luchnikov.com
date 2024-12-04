@@ -1,61 +1,47 @@
 <script>
-  import Avatar from "./Avatar.svelte";
-  import SocialLinks from "./SocialLinks.svelte";
-
-  const name = "Oleksii Luchnikov";
-  const short = "oil painter / key frame illustrator / concept artist for Films, Commercials & more";
-  const from = "Kharkiv, Ukraine";
+const name = "Oleksii Luchnikov";
+const short = "oil painter / key frame illustrator / concept artist for Films, Commercials & more";
+const from = "Kharkiv, Ukraine";
 </script>
-
-<main class="about-container" role="main">
-  <Avatar />
-  <section class="about-text-container">
-    <h1 class="about-title">Hi, I'm {name}</h1>
+<div class="text-container">
+    <h1 class="about-title">Hi, I'm <strong>{name}</strong></h1>
     <h2 class="about-short">{short}
-    <br aria-hidden="true" />
-    from {from}
+        <br aria-hidden="true" />
+        from {from}
     </h2>
-    <p class="about-long"></p>
-    <SocialLinks />
-  </section>
-</main>
-
+</div>
 <style>
-  .about-container {
-    font-family: "Fixel", sans-serif;
+
+.text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    transform: translateY(-5rem);
-  }
-  .about-text-container {
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 40%;
-    padding: 0;
-  }
-  .about-title {
+    align-items: left;
+    gap: 0;
+}
+.about-title {
+    font-weight: 500;
     font-size: 1.8rem;
     text-align: left;
     margin: 0;
-    padding: 0;
-  }
-  .about-short {
-    font-size: 1.2rem;
+}
+
+.about-title strong {
+    font-family: "Fixel Display";
+    font-weight: 900;
+}
+.about-short {
+    font-size: 1rem;
     font-weight: normal;
     text-align: flex-start;
     margin: 0;
     padding: 0;
-  }
-  .about-long {
+}
+.about-long {
     font-size: 1rem;
     text-align: left;
     padding: 0;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-  }
+}
 </style>

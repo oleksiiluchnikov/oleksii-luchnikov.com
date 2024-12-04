@@ -6,7 +6,7 @@
 
 body {
     overflow: hidden;
-    font-family: "Fixel", Arial, Helvetica, sans-serif;
+    font-family: "Fixel Display", Arial, Helvetica, sans-serif;
     color: var(--text-normal);
     display: flex;
     flex-direction: column;

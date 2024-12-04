@@ -1,7 +1,5 @@
 <script>
     import { page } from '$app/stores';
-
-    // Use $page.url.pathname instead of window.location.pathname
     $: currentPath = $page.url.pathname;
 </script>
 

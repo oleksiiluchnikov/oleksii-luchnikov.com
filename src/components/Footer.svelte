@@ -12,10 +12,10 @@
     height: 1.2em;
     opacity: 0.5;
     background-color: transparent;
-    padding: 1rem 0;
+    padding: 0.3rem 0;
     margin-top: auto;
-    role: contentinfo;
   }
+
   .footer-text {
     font-size: 0.8em;
     text-align: center;

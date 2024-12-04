@@ -26,7 +26,7 @@ isIconExists = !!icons[iconFile];
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    border-radius: 0.2rem;
+    border-radius: 0.4rem;
     background-color: var(--bg-primary);
     padding: 0.4rem 1rem;
     position: relative;
